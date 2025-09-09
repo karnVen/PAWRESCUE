@@ -1,0 +1,330 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+body.dark-theme {
+    background-color: #1f2937;
+    color: #f3f4f6;
+}
+
+body.dark-theme .bg-white {
+    background-color: #111827;
+}
+
+body.dark-theme .bg-gray-50 {
+    background-color: #1f2937;
+}
+
+body.dark-theme .bg-gray-100 {
+    background-color: #374151;
+}
+
+body.dark-theme .text-gray-700 {
+    color: #d1d5db;
+}
+
+body.dark-theme .text-gray-600 {
+    color: #e5e7eb;
+}
+
+body.dark-theme .text-gray-500 {
+    color: #f3f4f6;
+}
+
+body.dark-theme .text-gray-900 {
+    color: #f9fafb;
+}
+
+body.dark-theme .border-gray-300 {
+    border-color: #4b5563;
+}
+
+body.dark-theme .shadow-sm,
+body.dark-theme .shadow-md {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme input,
+body.dark-theme textarea {
+    background-color: #374151;
+    color: #f3f4f6;
+    border-color: #4b5563;
+}
+
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder {
+    color: #9ca3af;
+}
+
+body.dark-theme .bg-white.bg-opacity-80 {
+    background-color: rgba(17, 24, 39, 0.8);
+}
+
+body.dark-theme button.bg-white,
+body.dark-theme a.bg-white {
+    background-color: #374151;
+    color: #f3f4f6;
+    border-color: #4b5563;
+}
+
+body.dark-theme button.bg-gray-100,
+body.dark-theme a.bg-gray-100 {
+    background-color: #1f2937;
+    color: #f3f4f6;
+}
+
+body.dark-theme button.bg-primary,
+body.dark-theme a.bg-primary {
+    background-color: #4F46E5;
+    color: #ffffff;
+}
+
+body.dark-theme button.hover\:bg-gray-50:hover,
+body.dark-theme a.hover\:bg-gray-50:hover {
+    background-color: #374151;
+}
+
+body.dark-theme button.hover\:bg-primary\/90:hover,
+body.dark-theme a.hover\:bg-primary\/90:hover {
+    background-color: rgba(79, 70, 229, 0.8);
+}
+
+body.dark-theme button.border-primary,
+body.dark-theme button.border-primary,
+body.dark-theme a.border-primary {
+    border-color: #6366f1;
+}
+
+/* Fix for leaderboard number visibility in dark mode */
+body.dark-theme #leaderboard .w-8.h-8.bg-gray-200 {
+    background-color: #4b5563; /* Darker gray for better contrast */
+    color: #f3f4f6; /* Light text color for better visibility */
+}
+
+/* Maintain first place styling but ensure visibility in dark mode */
+body.dark-theme #leaderboard .w-8.h-8.bg-primary {
+    background-color: #4F46E5; /* Keep primary color */
+    color: #ffffff; /* Ensure white text is visible */
+}
+body.dark-theme .checkmark,
+body.dark-theme .radiomark {
+    background-color: #374151;
+    border-color: #4b5563;
+}
+
+#search-address-btn{
+    display: none;
+}
+
+body.dark-theme .custom-checkbox input:checked ~ .checkmark {
+    background-color: #4F46E5;
+    border-color: #6366f1;
+}
+
+body.dark-theme .custom-radio input:checked ~ .radiomark {
+    border-color: #6366f1;
+}
+
+body.dark-theme .custom-radio input:checked ~ .radiomark:after {
+    background: #4F46E5;
+}
+
+body.dark-theme .slider {
+    background-color: #4b5563;
+}
+
+body.dark-theme .custom-range {
+    background: #4b5563;
+}
+
+.hero-section {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url('https://readdy.ai/api/search-image?query=A heartwarming scene with a diverse collection of rescued animals including cats, rabbits, birds, guinea pigs, hamsters, and a few dogs. The image shows a variety of species being cared for by volunteers in a bright, clean shelter environment. The animals appear healthy and well-cared for, with different colors and breeds represented. The left side of the image has a clean white background that gradually transitions to a more detailed scene on the right, creating a natural space for text overlay on the left side.&width=1200&height=600&seq=12345&orientation=landscape&removebg=false');
+    background-size: cover;
+    background-position: center;
+}
+
+body.dark-theme .hero-section {
+    background-image: linear-gradient(to right, rgba(31, 41, 55, 0.95), rgba(31, 41, 55, 0.8), rgba(31, 41, 55, 0.6), rgba(31, 41, 55, 0.2)), url('https://readdy.ai/api/search-image?query=A heartwarming scene with a diverse collection of rescued animals including cats, rabbits, birds, guinea pigs, hamsters, and a few dogs. The image shows a variety of species being cared for by volunteers in a bright, clean shelter environment. The animals appear healthy and well-cared for, with different colors and breeds represented. The left side of the image has a clean white background that gradually transitions to a more detailed scene on the right, creating a natural space for text overlay on the left side.&width=1200&height=600&seq=12345&orientation=landscape&removebg=false');
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #e2e8f0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #4F46E5;
+    border-color: #4F46E5;
+}
+
+.checkmark:after {
+    content: "";
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radiomark {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-radio input:checked ~ .radiomark {
+    border-color: #4F46E5;
+}
+
+.radiomark:after {
+    content: "";
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4F46E5;
+}
+
+.radiomark-checked:after {
+    content: "";
+    display: block; /* Make sure it's visible */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4F46E5; /* Use the primary color */
+}
+
+body.dark-theme .radiomark-checked:after {
+    background: #4F46E5; /* Keep primary color */
+}
+
+/* .custom-radio input:checked ~ .radiomark:after {
+    display: block;
+} */
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e2e8f0;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4F46E5;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.custom-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: #e2e8f0;
+    outline: none;
+}
+
+.custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4F46E5;
+    cursor: pointer;
+}
+
+.custom-range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4F46E5;
+    cursor: pointer;
+    border: none;
+}
+
+.map-container {
+    background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
+    background-size: cover;
+    background-position: center;
+}
